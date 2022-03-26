@@ -1,0 +1,16 @@
+<div class="index-page">
+    
+    <h2><%= username %>'s Dashboard</h2>
+
+    <div class="description">
+        <p>Hi <%= username %>, welcome to Heroku Node</p>
+        <p>You can look around, modify your profile as much as you wish.</p>
+    </div>
+
+    <div>
+        <form action="/users/logout?_method=DELETE" method="post">
+            <button>Logout</button>
+        </form>
+    </div>
+
+</div>
