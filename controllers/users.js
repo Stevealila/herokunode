@@ -37,7 +37,6 @@ router.post('/register', async (req, res) => {
     try {
         await user.save()
         res.redirect('/users/login')
-        console.log(user);
     } catch {
         res.status(500).redirect('/', { message: 'registration failed, try again later.' })
     }
